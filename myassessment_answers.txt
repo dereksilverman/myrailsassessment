@@ -1,0 +1,35 @@
+My answers
+
+How does rails communicate with the database?  Please be thorough in discussing all the config files and pieces of rails necessary to communicate with the database. Rails using an ORM (Object Relational Mapping) called ActiveRecord which does the heavy lifting between Rails and your database. ActiveRecords comes with Rails. 
+	
+
+What is a resource? If you use resource in your routes it sets up all the RESTful routes for you.
+
+What are the standard RESTful routes for a resource?
+GET    /posts
+POST   /posts
+GET    /posts/new
+GET    /posts/:id/edit
+GET    /posts/:id
+PATCH  /posts/:id
+PUT    /posts/:id
+DELETE /posts/:id
+
+
+What is CRUD?
+Create, Read, Update, Destroy
+
+What is REST?
+Representational State Transfer
+
+What is the difference between CRUD and REST?
+Crud are actions, RESTful is a way to you execute those actions. 
+
+Describe the flow of a request from a users browser through the rails stack and back.
+URL hits route which sends the request to a particular action in a specific controller. The specified action grabs the objects the view will need and serves up the view in the layout. The whole page is then rendered in the browser.
+
+What are HTTP verbs?
+Get, Post, Put, Destroy 
+
+Why do we use migrations.
+So you have version control of your db, can always recreate it, update, or roll it back. 
